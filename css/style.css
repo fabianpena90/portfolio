@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: url('/Img/code-laptop.jpg') no-repeat scroll center center/cover;
+  background: url('/Img/code-laptop.jpg') no-repeat center center/cover transparent;
   background-size: 100vw;
   background-attachment: fixed;
 }
@@ -224,19 +224,19 @@ body {
   color: #fff;
   font-size: 3rem;
   justify-content: center;
+  text-decoration: none;
+  padding-bottom: 20px;
 }
 
-#hire-me .zoom {
+.hireme .zoom {
   transform: scale(1.5) rotate(360deg);
 }
 
 .get-in-touch {
+  display: flex;
+  flex-direction: column;
   padding-top: 100px;
-  max-width: 650px;
-  /* margin: 40px auto; */
-  position: relative;
-  top: 50%;
-  left: 28%;
+  margin: 0 200px;
 }
 
 .contact-form {
@@ -347,6 +347,88 @@ body {
 
 
 /* Mobile */
-@media(max-width: 768px) {
- 
+@media (max-width: 700px) {
+  body {
+    background-color: #333;
+    font-size: 20px;
+  }
+
+  /* Navbar */
+  #navbar nav {
+    background-color: black;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #navbar nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #navbar nav ul li {
+    padding-top: 15px;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #navbar nav ul li a:hover {
+    background-color: #888;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: 400px;
+  }
+
+  .profile-pic {
+    display: none;
+  }
+
+  .content a {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+
+  /* My Skills */
+  .my-skills h2 {
+    color: #fff;
+    padding: 0 0 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .skills-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Hire Me */
+  #hire-me {
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
