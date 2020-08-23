@@ -21,6 +21,6 @@ profilePic.addEventListener('mouseover', function() {
 
 // Header H2 functions
 h2Headers.addEventListener('click', function() {
-  console.log("jgsega")
+  // console.log("jgsega")
   this.classList.add('zoom')
 })

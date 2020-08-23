@@ -431,4 +431,8 @@ body {
     flex-direction: column;
   }
 
+  .social-media a {
+    padding: 15px 0;
+  }
+
 }
