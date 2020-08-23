@@ -68,6 +68,7 @@ body {
 
 #navbar nav ul li a:hover {
   border-bottom: #f4f4f4 1px solid;
+  color: black;
 }
 
 /* Content */
@@ -414,6 +415,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .skill-image {
+    width: 100px;
+    padding: 0 0 15px 0;
+    /* max-height: 10 0%; */
   }
 
   /* Hire Me */
