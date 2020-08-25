@@ -14,79 +14,150 @@
 </head>
 
 <body id="home">
-  <header class="main-header container">
+  <header class="hero">
     <div id="navbar" class="navbar top">
+      <h1 class="logo">FP</h1>
       <nav>
-        <a href="index.html" class="logo"><i class="fas fa-laptop-code"></i> Fabian</span> Pena</a>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#hire-me">Contact</a></li>
+          <li><a href="#profile">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/fabianpena90" target="_blank">GitHub</a></li>
+          <li><a href="https://github.com/fabianpena90" target="_blank">LinkedIn</a></li>
         </ul>
       </nav>
     </div>
 
     <div class="content">
-      <h1>Fabian Pena</h1>
-     <img class="profile-pic" src="./Img/profile.jpeg" alt="profile" width="200px" >
-      <p>Full Stack Web Developer</p>
-      <a class="my-projects" href="https://github.com/fabianpena90" target="_blank" class="btn"><i
-          class="fas fa-chevron-right"></i> My Projects</a>
+      <h1>Hello, my name is</h1>
+      <h1>Fabian Pena.</h1>
+      <p>I'm a full stack developer</p>
+      <a href="#about" class="btn-portfolio"><i class="fas fa-chevron-right"></i> View Portfolio</a>
     </div>
   </header>
 
-  <section class="my-skills container">
-    <h2><a class="title" id="skills" href="index.html">My Skills</a></h2>
-    <div class="skills">
-      <div class="skills-description">
-        <img class="skill-image" src="./Img/HTML5_Logo_512.png" alt="HTML" width="300px">
-        <img class="skill-image" src="./Img/css.png" alt="CSS" width="200px">
-        <img class="skill-image" src="./Img/Javascript_badge.svg_.png" alt="Javascript" width="300px">
+  <div class="middle-container flex-items">
+    <div class="about-me-content">
+      <div id="profile">
+        <div class="about-me">
+          <h1>About Me</h1>
+        </div>
+        <div class="about-me-main flex-items">
+          <img class="profile-pic" src="Img/profile.jpeg" alt="Fabian Pena">
+          <p>Hi! I’m Fabian Pena, a full-stack web developer based in Miami, FL. After working as a Travel Retail Sales
+            Manager for almost 10 years, I’ve decided to take the leap to pursue a career in Web Development. I’ve
+            enrolled
+            in a full-time web development bootcamp program at Ironhack Miami. Having just graduated from this rigorous
+            program, I can say that applying to a coding bootcamp has been the best decision I have ever made in my
+            life.
+            I
+            love to learn new technologies and flex my creativity to create amazing things.
+          </p>
+        </div>
+
       </div>
-      <div class="skills-description">
-        <img class="skill-image" src="./Img/react.png" alt="HTML" width="300px">
-        <img class="skill-image" src="./Img/node.png" alt="CSS" width="300px">
-        <img class="skill-image" src="./Img/angular.png" alt="Javascript" width="300px">
+      <!-- <hr>
+      <div class="portfolio">
+        <h1>Portfolio.</h1>
+        <div class="skill-row">
+          <img class="skill-img" src="/Img/" alt="computer coding">
+          <h3>Design & Development</h3>
+          <p>I am currently learning to code because the job demand is really high and that comes with a great salary.
+            Also, I get to create content and design apps as the user would like.</p>
+        </div>
       </div>
+
+      <hr> -->
+   
+
+      <div id="technologies">
+        <h1>Technologies I've Worked With</h1>
+        <div id="skills-main">
+          <div class="logos-box">
+            <h1><i class="fab fa-react fa-7x"></i></h1>
+            <h1><i class="fab fa-html5 fa-7x"></i></h1>
+            <h1><i class="fab fa-css3-alt fa-7x"></i></h1>
+          </div>
+          <div class="logos-box">
+            <h1><i class="fab fa-bootstrap fa-7x"></i></h1>
+            <h1><i class="fab fa-node fa-7x"></i></h1>
+            <h1><i class="fab fa-git fa-7x"></i></h1>
+          </div>
+          <div class="logos-box">
+            <h1><i class="fab fa-github fa-7x"></i></h1>
+            <h1><i class="fab fa-npm fa-7x"></i></h1>
+            <h1><i class="fab fa-js-square fa-7x"></i></h1>
+          </div>
+        </div>
+
+        <!-- Resume -->
+        <div id="resume">
+          <div id="resumeTitle">
+            <h1>Resume</h1>
+          </div>
+          <div id="resumeMain">
+            <a id="resumeView" href="#" target="_blank">View Resume
+              <i class="far fa-file-pdf"></i>
+            </a>
+            <a id="resumeDownload" href="#" download="">Download Resume
+              <i class="fas fa-download"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+        <div id="contactTitle">
+          <h1>Contact</h1>
+          <form class="form-group">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="hidden">
+              <label>Fill this if you are not human: <input name="bot-field"></label>
+            </div>
+            <div class="group">
+              <input type="text" name="name" required="required"><span class="highlight"></span><span
+                class="bar"></span>
+              <label>Name</label>
+            </div>
+            <div class="group">
+              <input type="text" name="email" required="required"><span class="highlight"></span><span
+                class="bar"></span>
+              <label>Email</label>
+            </div>
+            <div class="group">
+              <textarea type="textarea" name="message" rows="5" required="required"></textarea><span
+                class="highlight"></span><span class="bar"></span>
+              <label>Message</label>
+            </div>
+            <div class="btn-box">
+              <button class="btn btn-submit" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+            </div>
+          </form>
+        </div>
+
+
+      <footer>
+        <div id="footer-links">
+          <a class="socialMedia" href="mailto:camilo.fabis@gmail.com" target="_blank">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+          <a class="socialMedia" href="https://www.linkedin.com/in/fabianpena90/" target="_blank">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+          </a>
+          <a class="socialMedia" href="https://github.com/fabianpena90" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+        <div id="copyright">© <span id="year">2020</span> Fabian Pena. All rights reserved.</div>
+      </footer>
     </div>
-  </section>
-
-  <div class="hire-me-box container">
-    <section class="get-in-touch">
-      <h2><a class="title hireme" id="hire-me" href="index.html">Hire Me</a></h2>
-      <form class="contact-form">
-        <div class="form-field">
-          <input id="name" class="input-text
-            t type=" text" required>
-          <label class="label" for="name">Name</label>
-        </div>
-        <div class="form-field">
-          <input id="email" class="input-text" type="email" required>
-          <label class="label" for="email">E-mail</label>
-        </div>
-        <div class="form-field">
-          <input id="message" class="input-text" type="text" required>
-          <label class="label" for="message">Message</label>
-        </div>
-        <div class="form-field">
-          <button class="submit-btn" type="submit" value="Submit">SUBMIT</button>
-        </div>
-      </form>
-    </section>
-  </div>
-
-  <footer class="footer">
-    <div class="social-media">
-      <a href="https://www.linkedin.com/in/fabianpena90/" target="_blank"><i class="fab fa-linkedin "> linkedIn</i></a>
-      <a href="https://github.com/fabianpena90" target="_blank"><i class="fab fa-github "> GitHub</i></a>
-      <a href="https://www.facebook.com/fabian.pena1990" target="_blank"><i class="fab fa-facebook-square "> Facebook</i></a>
-      <a href="https://www.instagram.com/fabispena/" target="_blank"><i class="fab fa-instagram "> Instagram</i></a>
-    </div>
-    <p>&copy; Copyrights Fabian Pena 2020</p>
-  </footer>
 
 
-  <script src="./js/app.js"></script>
+
+
+
+
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
