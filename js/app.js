@@ -1,3 +1,12 @@
+//Welcome Message
+const btn = document.querySelector('.btn-portfolio');
+btn.addEventListener('click', clickMe);
+
+function clickMe() {
+  const name = prompt("What's your name");
+  alert(`Welcome ${name} to my Portfolio`)
+}
+
 // Profile pic 
 const profilePic = document.querySelector('.profile-pic');
 profilePic.addEventListener('mouseover', profilePicture);
