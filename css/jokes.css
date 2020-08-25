@@ -1,0 +1,25 @@
+body {
+  background: #322f3d;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 80px;
+}
+
+.get-joke {
+  border: 2px solid ;
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-size: 2rem;
+  background: #f6f5f5;
+}
+
+.list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  padding: 20px 0;
+  color: #f4f4f4;
+}
