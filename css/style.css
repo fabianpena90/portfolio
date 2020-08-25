@@ -149,6 +149,11 @@ img {
   border-bottom-right-radius: 30%;
   margin: 60px;
   border: 3px solid #333333;
+  filter: grayscale(1);
+}
+
+.pictureMe {
+  filter: grayscale(0);
 }
 
 #profile {
@@ -174,7 +179,7 @@ img {
   flex-wrap: nowrap;
   justify-content: center;
   align-content: space-around;
-  padding: 60px ;
+  padding: 60px;
 }
 
 .logos-box {
@@ -187,7 +192,7 @@ img {
   padding-right: 20px;
 }
 
-.logos-box i:hover{
+.logos-box i:hover {
   color: teal;
   animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
   transform: translate3d(0, 0, 0);
@@ -195,19 +200,23 @@ img {
 }
 
 @keyframes shake {
+
   10%,
   90% {
     transform: translate3d(-1px, 0, 0);
   }
+
   20%,
   80% {
     transform: translate3d(2px, 0, 0);
   }
+
   30%,
   50%,
   70% {
     transform: translate3d(-4px, 0, 0);
   }
+
   40%,
   60% {
     transform: translate3d(4px, 0, 0);
@@ -240,6 +249,7 @@ img {
   padding-left: 12px;
   padding-right: 12px;
 }
+
 /* Contact me */
 #contactTitle {
   padding: 0;
@@ -249,7 +259,7 @@ img {
   pointer-events: auto;
   transition-duration: 1s;
   transition-timing-function: ease;
-  transition-property: opacity,transform,-webkit-transform;
+  transition-property: opacity, transform, -webkit-transform;
   opacity: 1;
   transform: none;
 }
@@ -258,7 +268,8 @@ img {
   text-align: center;
 }
 
-input, textarea {
+input,
+textarea {
   background: none;
   color: #333333;
   font-size: 18px;
@@ -312,51 +323,56 @@ footer {
   width: 320px;
 }
 
-.footer:hover{
+.footer:hover {
   animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
   transform: translate3d(0, 0, 0);
   cursor: pointer;
 }
 
 @keyframes shake {
+
   10%,
   90% {
     transform: translate3d(-1px, 0, 0);
   }
+
   20%,
   80% {
     transform: translate3d(2px, 0, 0);
   }
+
   30%,
   50%,
   70% {
     transform: translate3d(-4px, 0, 0);
   }
+
   40%,
   60% {
     transform: translate3d(4px, 0, 0);
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 500px) {
   .navbar {
-      flex-direction: column;
-      height: 120px;
-      padding: 20px;
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
   }
 
   .navbar a {
-      padding: 10px 10px;
-      margin: 0 3px;
+    padding: 10px 10px;
+    margin: 0 3px;
   }
 
   .flex-items {
-      flex-direction: column;
+    flex-direction: column;
   }
 
-  .flex-columns .column, .flex-grid .column {
-      flex: 100%;
-      max-width: 100%;
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
   }
 
   .logos-box {
