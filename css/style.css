@@ -165,7 +165,43 @@ img {
   padding: 60px;
 }
 
-/* Portfolio */
+/* Game */
+.game {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.game h1, h2 {
+  text-align: center;
+}
+
+.game p {
+  text-align: center;
+}
+
+.gameContent {
+  display: flex;
+  justify-content: center;
+}
+.gameContent input {
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.btn-game {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-game button {
+  margin: 10px 20px;
+  font-size: 1.2rem;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 43px 41px 35px -17px rgba(0,0,0,0.66);
+}
 
 
 /* Technologies */
@@ -367,6 +403,10 @@ footer {
   .navbar a {
     padding: 10px 10px;
     margin: 0 3px;
+  }
+
+  .navbar ul {
+    display: none;
   }
 
   .flex-items {

@@ -1,13 +1,12 @@
 // document.querySelector('.get-joke').onclick = getJoke
-document.querySelector('.get-weather').onclick = getWeather
-
-
 // function getJoke(){
-//     axios.get('https://api.icndb.com/jokes/random/').then((res)=>{
-//           document.querySelector('.get-joke-list').innerHTML += `<li class="list">${res.data.value.joke}</li>`  
-//         })
-// }
+  //     axios.get('https://api.icndb.com/jokes/random/').then((res)=>{
+    //           document.querySelector('.get-joke-list').innerHTML += `<li class="list">${res.data.value.joke}</li>`  
+    //         })
+    // }
 
+// Get Weather API Function
+document.querySelector('.get-weather').onclick = getWeather
 function getWeather(){
   const apiKey = '8fccd9a5790e18a0df5eb2dedd85ff19'
   const city = document.querySelector('.textInput').value
