@@ -40,10 +40,10 @@ var map, infoWindow;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {
-      lat: -34.397,
-      lng: 150.644
+      lat: 0,
+      lng: 0
     },
-    zoom: 6
+    zoom: 8
   });
   infoWindow = new google.maps.InfoWindow;
 
@@ -54,7 +54,7 @@ function initMap() {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       };
-
+      console.log(position)
       infoWindow.setPosition(pos);
       infoWindow.setContent('Location found.');
       infoWindow.open(map);
