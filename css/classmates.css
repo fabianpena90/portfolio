@@ -69,14 +69,39 @@ a {
 	padding-bottom: .5em;
 	border: 1px solid #a2a2a2;
 	background-color: #f4f4f4;
-	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.studentsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.data {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.dataList {
+  color: lightskyblue !important;
+  font-size: 1rem;
+}
+
+.gif {
+  display: flex;
+  
+}
 
 @media (min-width: 769px) {
 	.header,

@@ -7,8 +7,8 @@ function getData(){
           for(let i = 0; i < data.length; i++) {
             // console.log(data[i].last_name)
             document.querySelector('.studentsList').innerHTML += `
-            <li>${data[i].first_name} ${data[i].last_name}</li>
-            <li><a href="${data[i].website}" >Portfolio</a></li>
+            <li class="data">${data[i].first_name} ${data[i].last_name}</li>
+            <span class="data"><a class="dataList" href="${data[i].website}" >Portfolio</a></span>
             `
           
             }
@@ -25,6 +25,6 @@ function giphy() {
     const randomGif = Math.floor(Math.random() * data.length);
     const url = data[randomGif].embed_url;
 
-    document.querySelector('.content').innerHTML += `<iframe src="${url}" width="480" height="338" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="https://giphy.com/gifs/silicon-valley-rrj7FpUH9BlK0"></a>`
+    document.querySelector('.gif').innerHTML += `<iframe class="gif" src="${url}" width="480" height="338" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="https://giphy.com/gifs/silicon-valley-rrj7FpUH9BlK0"></a>`
   })
 }
