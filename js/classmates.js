@@ -7,8 +7,10 @@ function getData(){
           for(let i = 0; i < data.length; i++) {
             // console.log(data[i].last_name)
             document.querySelector('.studentsList').innerHTML += `
-            <li class="data">${data[i].first_name} ${data[i].last_name}</li>
-            <span class="data"><a class="dataList" href="${data[i].website}" >Portfolio</a></span>
+            <li class="data">${data[i].first_name} ${data[i].last_name}
+            <span class="data"><a class="dataList" href="${data[i].website}" target="_blank">Portfolio</a></span>
+            </li>
+            
             `
           
             }
