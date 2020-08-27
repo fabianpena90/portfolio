@@ -78,6 +78,7 @@
   border: 1px solid;
   height: 600px;
   width: 600px;
+  margin: 0 auto;
 }
 
 @media(max-width: 768px){
