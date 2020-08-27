@@ -13,8 +13,8 @@ function getWeather(){
   const units = 'imperial'
   const url = `http://openweathermap.org/img/wn/`
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}&icon=04d`).then((res)=>{
-      // console.log(res.data.main.temp)
-          document.querySelector('.get-weather-list').innerHTML = `
+      // console.log(res);
+          document.querySelector('.get-weather-list').innerHTML = ` 
           <p class="list">The tempeture in ${city} is ${res.data.main.temp}F <img src=${url + res.data.weather[0].icon + '@2x.png'} /></p>
           <p class="list">Feels like ${res.data.main.feels_like} F</p> 
           <p class="list">The weather is currently ${res.data.weather[0].description}</p>
@@ -34,5 +34,16 @@ function colorChanger() {
   for(let i = 0; i < 6; i++) {
     randomCol += randomColor[Math.floor(Math.random() * 16)]
   }
-  document.body.style.backgroundColor = '#' + randomCol;
+  document.body.style.backgroundColor = `# ${randomCol}`;
 }
+
+// Google Maps
+// let map;
+
+// function initMap() {
+//   map = new google.maps.Map(document.getElementById("map"), {
+//     center: { lat: -34.397, lng: 150.644 },
+//     zoom: 8
+//   });
+// }
+

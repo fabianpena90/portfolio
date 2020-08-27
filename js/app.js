@@ -32,6 +32,8 @@ function logo(e) {
   }
 }
 
+
+
 // Game Function
 // let p1Button = document.querySelector("#p1");
 // let p2Button = document.querySelector("#p2");

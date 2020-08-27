@@ -71,6 +71,12 @@
   text-align: center;
 }
 
+/* #map {
+  border: 1px solid;
+  height: 600px;
+  width: 600px;
+} */
+
 @media(max-width: 768px){
   .content {
     flex-direction: column;
