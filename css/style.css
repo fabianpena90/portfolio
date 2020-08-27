@@ -156,6 +156,10 @@ img {
   filter: grayscale(1);
 }
 
+.profile-pic:hover{
+  filter: grayscale(0);
+}
+
 .pictureMe {
   filter: grayscale(0);
 }
