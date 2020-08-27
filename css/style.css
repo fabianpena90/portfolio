@@ -393,7 +393,7 @@ footer {
   }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 768px) {
   .navbar {
     flex-direction: column;
     height: 120px;
@@ -405,10 +405,6 @@ footer {
     margin: 0 3px;
   }
 
-  .navbar ul {
-    display: none;
-  }
-
   .flex-items {
     flex-direction: column;
   }
@@ -417,6 +413,11 @@ footer {
   .flex-grid .column {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .l-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
   }
 
   .logos-box {

@@ -13,21 +13,21 @@ profilePic.addEventListener('mouseover', profilePicture);
 
 function profilePicture(e) {
   const pic = e.target;
-if(pic !== 'pictureMe'){
-  pic.classList.toggle('pictureMe')
-}
+  if (pic !== 'pictureMe') {
+    pic.classList.toggle('pictureMe')
+  }
 }
 
 // Social Media Function
 const logos = document.querySelectorAll('.footerLogos');
-for(let i = 0; i < logos.length; i++){
+for (let i = 0; i < logos.length; i++) {
   const skills = logos[i];
   skills.onmouseover = logo;
 }
 
 function logo(e) {
   const skills = e.target;
-  if(skills !== 'footer') {
+  if (skills !== 'footer') {
     skills.classList.toggle('footer')
   }
 }
@@ -57,7 +57,7 @@ function logo(e) {
 //     }
 //     p1Display.textContent = p1Score;
 //     } 
-    
+
 // });
 
 // p2Button.addEventListener("click", function (){
