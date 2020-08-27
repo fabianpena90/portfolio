@@ -73,6 +73,13 @@ a {
 	border-radius: 5px;
 }
 
+.l-heading {
+	font-size: 3rem;
+	color: #34495e;
+	letter-spacing: 1rem;
+	text-align: center;
+}
+
 .content {
   display: flex;
   flex-direction: column;
