@@ -89,12 +89,7 @@ body {
   height: 600px;
   width: 600px;
   margin: 0 auto;
-  opacity: 0.5;
   margin-top: 60px;
-}
-
-#map:hover {
-  opacity: 1;
 }
 
 @media(max-width: 768px){
