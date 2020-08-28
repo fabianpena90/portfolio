@@ -44,6 +44,7 @@ body {
 .l-heading {
   font-size: 4rem;
   text-align: center;
+  color: white;
 }
 
 .content {
@@ -53,6 +54,7 @@ body {
 
 .weather {
   font-size: 2rem;
+  color: #fff;
   margin-bottom: 15px;
 }
 
