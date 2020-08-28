@@ -106,20 +106,7 @@ a {
 }
 
 .gif {
-  display: flex;
-  
-}
-
-.container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	margin-left: 40%;
-}
-
-.container .inputGame, .btn-game {
-	width: 25%;
+  display: flex;  
 }
 
 @media (min-width: 769px) {
