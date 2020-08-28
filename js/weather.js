@@ -15,7 +15,7 @@ function getWeather() {
           <p class="list">The minimum tempeture is ${res.data.main.temp_min}F 
           and the max tempeture is ${res.data.main.temp_max}F</p>
           `
-  })
+        })
 }
 
 // Background Color

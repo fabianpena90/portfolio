@@ -110,6 +110,18 @@ a {
   
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin-left: 40%;
+}
+
+.container .inputGame, .btn-game {
+	width: 25%;
+}
+
 @media (min-width: 769px) {
 	.header,
 	.main-nav {
