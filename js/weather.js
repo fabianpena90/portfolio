@@ -7,6 +7,7 @@ function getWeather() {
   const units = 'imperial'
   const url = `http://openweathermap.org/img/wn/`
   axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}&icon=04d`).then((res) => {
+    // console.log(res)
     document.querySelector('.get-weather-list').innerHTML = ` 
           <p class="list">The tempeture in ${city} is ${res.data.main.temp}F <img src=${url + res.data.weather[0].icon + '@2x.png'} /></p>
           <p class="list">Feels like ${res.data.main.feels_like} F</p> 
@@ -17,6 +18,7 @@ function getWeather() {
           `
         })
 }
+
 
 // Background Color
 const randomColor = '0123456789ABCDEF'

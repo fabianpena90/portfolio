@@ -243,6 +243,10 @@ img {
   cursor: pointer;
 }
 
+.logoName {
+  text-align: center;
+}
+
 @keyframes shake {
 
   10%,
