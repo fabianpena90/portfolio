@@ -181,7 +181,12 @@ img {
 
 .projects-box {
   display: flex;
-  justify-content:space-between
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+.projects-title {
+  padding-bottom: 40px;;
 }
 
 .projects-img {
