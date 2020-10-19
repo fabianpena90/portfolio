@@ -229,6 +229,7 @@ img {
 .logos-box {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .logos-box i {
