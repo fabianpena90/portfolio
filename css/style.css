@@ -149,6 +149,10 @@ img {
 
 }
 
+.tech {
+  text-align: center;
+}
+
 .ui.button {
   margin-top: 20px;
 }
