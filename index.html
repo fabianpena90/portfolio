@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="1080px, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css
   ">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -15,182 +16,182 @@
 
 <body id="home">
   <header class="hero">
-    <div id="navbar" class="navbar top">
-      <h1 class="logo">FP</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#profile">About</a></li>
-          <!-- <li><a href="classmates.html" target="_blank">Ironhack</a></li> -->
-          <li><a href="#contactTitle">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav id="home" >
+      <div class="ui borderless fluid huge top fixed menu inverted main-nav">
+        <div class="header item">
+          Fabian Pena
+        </div>
+        <div class="right menu">
+          <a href="#home" class="item">
+            Home
+          </a>
+          <a href="#about" class="item">
+            About
+          </a>
+          <a href="#projects" class="item">
+            Projects
+          </a>
+          <a href="#contact" class="item">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
 
     <div class="content">
       <h1>Hello, my name is</h1>
       <h1>Fabian Pena</h1>
       <p>I'm a web developer</p>
-      <!-- <button type="submit" class="btn-portfolio">Click Here</button> -->
     </div>
   </header>
-
-  <div class="middle-container flex-items">
-    <div class="about-me-content">
-      <div id="profile">
-        <div class="about-me">
-          <h1 class="l-heading">About Me</h1>
-        </div>
-        <div class="about-me-main flex-items">
-          <img class="profile-pic" src="Img/profile.jpeg" alt="Fabian Pena">
-          <p>Hi! I’m Fabian Pena, a full-stack web developer based in Miami, FL. After working as a Travel Retail Sales
-            Manager for almost 10 years, I’ve decided to take the leap to pursue a career in Web Development. I’ve
-            enrolled
-            in a full-time web development bootcamp program at Ironhack Miami. Having just graduated from this rigorous
-            program, I can say that applying to a coding bootcamp has been the best decision I have ever made in my
-            life.
-            I
-            love to learn new technologies and flex my creativity to create amazing things.
-          </p>
-        </div>
-      </div>
-
-      <div id="projects">
-        <h1 class="l-heading">Projects</h1>
-        <div class="projects-box">
-          <div class="projects-title">
-            <a href="https://iron-folio.netlify.app/" target="_blank"><img class="projects-img" src="Img/Ironfolio.png" alt="" ></a>
-            <h3 class="projects-header">Ironfolio</h3>
-            <ul>Technologies used: 
-              <p>React, JavaScript, MongoDB, Expressjs, Nodejs, Material UI,</p> 
-                <p>Google Auth, Mongoose, Netlify, Heroku JSON Web Token, </p>
-                <p>API's, Axios, HTML & CSS
-              </p>
-            </ul>
-          </div>
-          <div class="projects-title">
-            <a href="https://shrouded-lowlands-50211.herokuapp.com/" target="_blank"><img class="projects-img" src="Img/chat-app.png" alt="" ></a>
-            <h3 class="projects-header">Chat-App</h3>
-            <ul>Technologies used: 
-              <p>JavaScript, Axios, HTML & CSS, Heroku</p>
-            </ul>
-          </div>
-          <div class="projects-title">
-            <a href="https://the-new-normal-informative.netlify.app/" target="_blank"><img class="projects-img" src="Img/thenewnormal.png" alt="" ></a> 
-            <h3 class="projects-header">The New Normal Informative</h3>
-            <ul>Technologies used: 
-              <p>React, Bootstrap, Axios, Netlify, API's</p>
-            </ul>
-          </div>
-          <div class="projects-title">
-            <a href="https://ghost-town.netlify.app/" target="_blank"><img class="projects-img" src="Img/ghost.png" alt="" ></a> 
-            <h3 class="projects-header">Ghost Town - Game</h3>
-            <ul>Technologies used: 
-              <p>JavaScript, Canvas, HTML & CSS</p>
-            </ul>
-          </div>
-          <div class="projects-title">
-            <a href="https://fabianpena90.github.io/portfolio/weather" target="_blank"><img class="projects-img" src="Img/weatherproject.png" alt="" ></a> 
-            <h3 class="projects-header">Weather Finder</h3>
-            <ul>Technologies used: 
-              <p>JavaScript, HTML & CSS, Axios, Google API</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id="technologies">
-        <h1 class="l-heading">Technologies I've Worked With</h1>
-        <div id="skills-main">
-          <div class="logos-box">
-            <h1><i class="fab fa-react fa-7x"></i></h1>
-            <p class="logoName">React</p>
-            <h1><i class="fab fa-html5 fa-7x"></i></h1>
-            <p class="logoName">HTML5</p>
-            <h1><i class="fab fa-css3-alt fa-7x"></i></h1>
-            <p class="logoName">CSS3</p>
-          </div>
-          <div class="logos-box">
-            <h1><i class="fab fa-bootstrap fa-7x"></i></h1>
-            <p class="logoName">Bootstrap</p>
-            <h1><i class="fab fa-node fa-7x"></i></h1>
-            <p class="logoName">Node JS</p>
-            <h1><i class="fab fa-git fa-7x"></i></h1>
-            <p class="logoName">Git</p>
-          </div>
-          <div class="logos-box">
-            <h1><i class="fab fa-github fa-7x"></i></h1>
-            <p class="logoName">GitHub</p>
-            <h1><i class="fab fa-npm fa-7x"></i></h1>
-            <p class="logoName">npm</p>
-            <h1><i class="fab fa-js-square fa-7x"></i></h1>
-            <p class="logoName">JavaScript</p>
-          </div>
-        </div>
-
-        <!-- Resume -->
-        <div id="resume">
-          <div id="resumeTitle">
-            <h1 class="l-heading">Resume</h1>
-          </div>
-          <div id="resumeMain">
-            <a id="resumeView" href="./FabianPenaResume2020.pdf" target="_blank">View Resume
-              <i class="far fa-file-pdf"></i>
-            </a>
-            <a id="resumeDownload" href="./FabianPenaResume2020.pdf" download="Resume Fabian Pena">Download Resume
-              <i class="fas fa-download"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div id="contactTitle">
-        <h1>Contact</h1>
-        <form action="mailto:camilo.fabis@gmail.com" method="POST" enctype="text/plain" class="form-group" />
-        <div class="group">
-          <input type="text" name="name" required="required"><span class="highlight"></span><span class="bar"></span>
-          <label>Name</label>
-        </div>
-        <div class="group">
-          <input type="text" name="email" required="required"><span class="highlight"></span><span class="bar"></span>
-          <label>Email</label>
-        </div>
-        <div class="group">
-          <textarea type="textarea" name="message" rows="5" required="required"></textarea><span
-            class="highlight"></span><span class="bar"></span>
-          <label>Message</label>
-        </div>
-        <div class="btn-box">
-          <button class="btn btn-submit" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-        </div>
-        </form>
-      </div>
-
-
-      <footer>
-        <div id="footer-links">
-          <a class="socialMedia" href="mailto:camilo.fabis@gmail.com" target="_blank">
-            <i class="footerLogos fas fa-envelope fa-2x"></i>
-          </a>
-          <a class="socialMedia" href="https://www.linkedin.com/in/fabianpena90/" target="_blank">
-            <i class="footerLogos fab fa-linkedin-in fa-2x"></i>
-          </a>
-          <a class="socialMedia" href="https://github.com/fabianpena90" target="_blank">
-            <i class="footerLogos fab fa-github fa-2x"></i>
-          </a>
-        </div>
-        <div id="copyright">© <span id="year">2020</span> Fabian Pena. All rights reserved.</div>
-      </footer>
+  
+  <article class="about-content">
+    <div class="ui container">
+      <h2 id="about" class="ui center aligned header">About me</h2>
+      <img class="ui centered medium image" src="./Img/profile.jpeg">
+      <p>
+        Hi! I’m Fabian Pena, a full-stack web developer based in Miami, FL. After working as a Travel Retail Sales Manager for almost 10 years, I’ve decided to take the leap to pursue a career in Web Development. I’ve enrolled in a full-time web development bootcamp program at Ironhack Miami. Having just graduated from this rigorous program, I can say that applying to a coding bootcamp has been the best decision I have ever made in my life. I love to learn new technologies and flex my creativity to create amazing things.
+      </p>
     </div>
+  </article>
 
-    <script defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCQRXV_jmf-51jjLHsU6OeYbsAYYdMQY8&callback=initMap">
-  </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"
-      integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg=="
-      crossorigin="anonymous"></script>
-    <script src="./js/app.js"></script>
+  <article class="ui container">
+    <h2 id="projects" class="ui center aligned header">Projects</h2>
+    <div class="projects-content">
+      <div class="ui card">
+        <div class="image">
+          <img src="./Img/Ironfolio.png">
+        </div>
+        <div class="content">
+          <a href="https://iron-folio.netlify.app/" target="_blank" class="header">Ironfolio</a>
+          <div class="description">
+            A Student app for the Ironhack Web Development bootcamp where each student is able to create,
+            save and share their projects they have built in their class.
+          </div>
+        </div>
+        <div class="extra content">
+          <a href="https://iron-folio.netlify.app/" target="_blank">
+            See more
+          </a>
+        </div>
+      </div>
+      <div class="ui card">
+        <div class="image">
+          <img src="./Img/thenewnormal.png">
+        </div>
+        <div class="content">
+          <a href="https://the-new-normal-informative.netlify.app/" target="_blank" class="header">The New Normal Informative</a>
+          <div class="description">
+            A website where the user can update himself/herself with the latest news, weather, events, 
+            and more.
+          </div>
+        </div>
+        <div class="extra content">
+          <a href="https://the-new-normal-informative.netlify.app/" target="_blank">
+            See more
+          </a>
+        </div>
+      </div>
+      <div class="ui card">
+        <div class="image">
+          <img src="./Img/chat-app.png">
+        </div>
+        <div class="content">
+          <a href="https://shrouded-lowlands-50211.herokuapp.com/" target="_blank" class="header">Chat App</a>
+          <div class="description">
+            Chat application where the user has to share the link in order to chat with 1 or more 
+            users at a time.
+          </div>
+        </div>
+        <div class="extra content">
+          <a href="https://shrouded-lowlands-50211.herokuapp.com/" target="_blank">
+            See more
+          </a>
+        </div>
+      </div>
+      <div class="ui card">
+        <div class="image">
+          <img src="./Img/ghost.png">
+        </div>
+        <div class="content">
+          <a href="https://ghost-town.netlify.app/" target="_blank" class="header">Ghost Town</a>
+          <div class="description">
+            A single player game where the user has to survive the game by shooting the
+            ghosts that will appear in the screen at a random moment in time.
+          </div>
+        </div>
+        <div class="extra content">
+          <a href="https://ghost-town.netlify.app/" target="_blank">
+            See more
+          </a>
+        </div>
+      </div>
+      <div class="ui card">
+        <div class="image">
+          <img src="./Img/weatherproject.png">
+        </div>
+        <div class="content">
+          <a href="https://fabianpena90.github.io/portfolio/weather" target="_blank" class="header">Weather Finder</a>
+          <div class="description">
+            A simple weather finder app that user can use to find the weather where user is located
+            at any place in the world.
+          </div>
+        </div>
+        <div class="extra content">
+          <a href="https://fabianpena90.github.io/portfolio/weather/" target="_blank">
+            See more
+          </a>
+        </div>
+      </div>
+      <div class="ui card">
+        <div class="image">
+          <img src="./Img/mia305.png">
+        </div>
+        <div class="content">
+          <a href="https://miaplacestogo.netlify.app/" target="_blank" class="header">Mia Places</a>
+          <div class="description">
+            An app where the user to guide himself when use goes to Miami, it'll be an easy tool
+            to use.
+          </div>
+        </div>
+        <div class="extra content">
+          <a href="https://miaplacestogo.netlify.app/" target="_blank">
+            See more
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="contact" class="contact-content">
+    <div class="ui container">
+      <h2 class="ui center aligned header">Contact Me <i class="envelope icon"></i></h2>
+      <div class="ui form">
+        <div class="two fields">
+          <div class="field">
+            <label>First name</label>
+            <input type="text" placeholder="First Name">
+          </div>
+          <div class="field">
+            <label>Last name</label>
+            <input type="text" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea></textarea>
+        </div>
+      </div>
+      <button class="large ui button">
+        Submit
+      </button>
+    </div>
+  </article>
+
+  <footer>&#169; Copyright Fabian Pena 2020 <a href="https://github.com/fabianpena90" target="_blank"><i class="github  icon"></i></a> <a href="mailto:camilo.fabis@gmail.com"><i class="paper plane  icon"></i></a> <a href="https://www.linkedin.com/in/fabianpena90/" target="_blank"><i class="linkedin icon"></i></a>
+  </footer>
+
+  
 </body>
 
 </html>
