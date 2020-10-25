@@ -183,25 +183,23 @@
     <div class="ui container">
       <h2 class="ui center aligned header">Contact Me</h2>
       <div class="ui form">
-        <form action="mailto:camilo.fabis@gmail.com" enctype="text/plain">
+        <form class="kwes-form" action="https://kwes.io/api/foreign/forms/bwk0drOq3NrKTuq1SadX">
         <div class="two fields">
           <div class="field">
-            <label>First name</label>
-            <input type="text" placeholder="First Name">
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" placeholder="First Name" rules="required|max:255">
           </div>
           <div class="field">
-            <label>Last name</label>
-            <input type="text" placeholder="Last Name">
+            <label for="lastName">Last name</label>
+            <input type="text" name="lastName" placeholder="Last Name" rules="required|max:255">
           </div>
         </div>
         <div class="field">
           <label>Message</label>
-          <textarea></textarea>
+          <textarea name="message" rules="required|max:255"></textarea>
         </div>
+        <button type="submit" class="btn btn-large ui button">Submit</button>
       </div>
-      <button type="submit" class="btn btn-large ui button">
-        Submit
-      </button>
     </form>
     </div>
   </article>
@@ -209,7 +207,7 @@
   <footer>&#169; Copyright Fabian Pena 2020 <a href="https://github.com/fabianpena90" target="_blank"><i class="github  icon"></i></a> <a href="mailto:camilo.fabis@gmail.com"><i class="paper plane  icon"></i></a> <a href="https://www.linkedin.com/in/fabianpena90/" target="_blank"><i class="linkedin icon"></i></a>
   </footer>
 
-  
+  <script src="https://kwes.io/v2/kwes-script.js" defer></script>
 </body>
 
 </html>
