@@ -160,6 +160,30 @@ img {
   flex-wrap: wrap;
 }
 
+/* Technologies */
+.technologies {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.article {
+  margin: 80px 0 !important;
+}
+
+.fab:hover {
+  color: rgb(47, 60, 154) !important;
+}
+
+.icones {
+  font-weight: bold;
+}
+
+.t-header {
+  padding-bottom:40px !important;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -181,5 +205,13 @@ footer {
   }
   footer {
     font-size: 14px;
+  }
+  .technologies {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+
   }
 }
