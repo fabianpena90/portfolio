@@ -136,17 +136,38 @@ img {
   padding-bottom: 40px;
 }
 
+.resume {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resume a {
+  padding: 10px 40px;
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.resume a:hover {
+  background-color: #333;
+  color: white;
+  border-radius: 25px;
+}
+
 .ui.container p {
   font-size: 18px;
 }
 
 /* Projects */
-.ui.card {
+div.image {
   opacity: .5;
 }
 
-.ui.card:hover {
+div.image:hover {
   opacity: 1;
+}
+
+.ui.card {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
@@ -200,7 +221,7 @@ footer {
   font-size: 20px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .main-nav {
     display: flex;
     flex-direction: column;
