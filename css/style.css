@@ -258,7 +258,7 @@ div.image:hover {
 }
 
 .tech {
-  text-align: center;
+  text-align: center!important;
 }
 
 .ui.button {
@@ -273,28 +273,21 @@ div.image:hover {
 }
 
 /* Technologies */
-.technologies {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .article {
   margin: 80px 0 !important;
 }
 
-.fab {
+.tech img {
   transition:all 0.3s ease;
 }
 
-.fab:hover {
-  color: rgb(47, 60, 154) !important;
+.tech img:hover {
   transform:scale(1.3);
 }
 
 .icones {
   font-weight: bold;
+  text-align: center;
 }
 
 .t-header {
@@ -322,13 +315,6 @@ footer {
   }
   footer {
     font-size: 14px;
-  }
-  .technologies {
-    display: flex !important;
-    flex-direction: column !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
   }
 }
 
