@@ -245,13 +245,6 @@ img {
 }
 
 /* Projects */
-div.image {
-  opacity: .5;
-}
-
-div.image:hover {
-  opacity: 1;
-}
 
 .ui.card:hover {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
