@@ -2,245 +2,300 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="1080px, initial-scale=1.0" />
-  <meta name="Fabian Pena" content="Portfilio website" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css
-  ">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://kit.fontawesome.com/656c96167f.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/style.css">
   <title>Fabian Pena || Web Developer</title>
 </head>
 
-<body id="home">
-  <header class="hero">
-    <header class="header">
-      <a href="#home" class="logo">Fabian Pena</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn">
-      <span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
-
-    <div class="content">
-      <h1>Hello, my name is</h1>
-      <h1>Fabian Pena</h1>
-      <p>I'm a web developer</p>
+<body>
+  <div class="hero">
+    <div class="diagonal-hero-bg">
+      <div class="stars">
+        <div class="small"></div>
+        <div class="medium"></div>
+        <div class="big"></div>
+      </div>
     </div>
-  </header>
+    <div class="flex">
+      <div class="text">Hello, I'm <span class="highlight">Fabian Pena </span><br> I'm a web developer.</div>
+      <div class="btn-work">
+        View my work
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </div>
+  </div>
   
-  <article id="about" class="about-content">
-    <div class="ui container">
-      <h2 class="subtitles">About me</h2>
-      <img class="ui centered small image" src="./Img/profile.jpeg" alt="Profile">
-      <div class="resume">
-        <a href="/Fabian Pena Resume 2020.pdf" download>Resume</a>
-      </div>
-      <p>
-        Hi! I’m Fabian Pena, a full-stack web developer based in Miami, FL. After working as a Travel Retail Sales Manager for almost 10 years, I’ve decided to take the leap to pursue a career in Web Development. I’ve enrolled in a full-time web development bootcamp program at Ironhack Miami. Having just graduated from this rigorous program, I can say that applying to a coding bootcamp has been the best decision I have ever made in my life. I love to learn new technologies and flex my creativity to create amazing things.
-      </p>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Fabian Pena</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Me</a>
+        </li>
+      </ul>
     </div>
-  </article>
+  </nav>
 
-  <article id="projects" class="ui container">
-    <h2 class="subtitles">Projects</h2>
-    <div class="ui three stackable cards">
-      <div class="ui card">
-        <div class="image">
-          <img src="./Img/Ironfolio.png" alt="Projects">
-        </div>
-        <div class="content">
-          <a href="https://iron-folio.netlify.app/" target="_blank" class="header">Ironfolio</a>
-          <div class="description">
-            A Student app for the Ironhack Web Development bootcamp where each student is able to create,
-            save and share their projects they have built in their class.
+  <!-- About -->
+
+  <section id="about">
+    <div class="container">
+      <h2 class="text-center">About</h2>
+      <div class="text-center">
+        <img src="./Img/profile.jpeg" class="rounded" alt="Profile Picture">
+      </div>
+      <div class="intro">
+        <p>Hi! I’m Fabian Pena, a Front-End Developer for <a href="https://www.ninjarmm.com" target="_blank">NinjaRMM</a> in San
+          Francisco, CA. I have some serious passions for developing and creating intuitive, dynamic and user experiences.
+        </p>
+      </div>
+
+      <div class="about-icons">
+        <div class="row">
+          <div class="col-sm">
+            <i class="fas fa-tachometer-alt fa-5x"></i><br>
+            <span class="icon-title"><strong>Fast</strong></span>
+            <div class="about-icons-description">
+              Fast load times and lag free interaction, my highest priority.
+            </div>
+          </div>
+          <div class="col-sm">
+            <i class="fas fa-laptop fa-5x"></i><br>
+            <span class="icon-title"><strong>Responsive</strong></span>
+            <div class="about-icons-description">
+              My layouts will work on any device, big or small.
+            </div>
+          </div>
+          <div class="col-sm">
+            <i class="fas fa-lightbulb fa-5x"></i><br>
+            <span class="icon-title"><strong>Intuitive</strong></span>
+            <div class="about-icons-description">
+              Strong preference for easy to use, intuitive UX/UI.
+            </div>
+          </div>
+          <div class="col-sm">
+            <i class="fas fa-rocket fa-5x"></i><br>
+            <span class="icon-title"><strong>Dynamic</strong></span>
+            <div class="about-icons-description">
+              Websites don't have to be static, I love making pages come to life.
+            </div>
           </div>
         </div>
-        <div class="extra content">
-          <a href="https://iron-folio.netlify.app/" target="_blank">
-            See more
-          </a>
-        </div>
       </div>
-      <div class="ui card">
-        <div class="image">
-          <img src="./Img/landscape.png" alt="Projects">
-        </div>
-        <div class="content">
-          <a href="https://the-new-normal-informative.netlify.app/" target="_blank" class="header">The New Normal Informative</a>
-          <div class="description">
-            A website where the user can update himself/herself with the latest news, weather, events, 
-            and more.
+  </section>
+
+  <hr class="style-five">
+
+  <!-- Projects -->
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+        <div class="col-sm">
+          <div class="project-container">
+            <h4 class="title">Movie Finder</h4>
+            <div class="content">
+              <a href="https://the-movie-finder.netlify.app/" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./img/moviefinder.png">
+                <div class="content-details fadeIn-top">
+                  <h3>Movie Finder</h3>
+                  <p>React JS / Axios / Semantic UI</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="extra content">
-          <a href="https://the-new-normal-informative.netlify.app/" target="_blank">
-            See more
-          </a>
-        </div>
-      </div>
-      <div class="ui card">
-        <div class="image">
-          <img src="./Img/MovieFinder.png" alt="Projects">
-        </div>
-        <div class="content">
-          <a href="https://the-movie-finder.netlify.app/" target="_blank" class="header">Movie Finder</a>
-          <div class="description">
-            A Movie Library made with React. You also get movies based on the one you're watching, and check information about him/her as well as movies that same actor enters. 
+        <div class="col-sm">
+          <div class="project-container">
+            <h4 class="title">Fabian's Shop</h4>
+            <div class="content">
+              <a href="https://infinite-bayou-87096.herokuapp.com/" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./img/ecommerceapp.png">
+                <div class="content-details fadeIn-top">
+                  <h3>e-Commerce</h3>
+                  <p>React / Redux / MongoDB / Axios / JWT / Bootstra React</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="extra content">
-          <a href="https://the-movie-finder.netlify.app/" target="_blank">
-            See more
-          </a>
-        </div>
-      </div>
-      <div class="ui card">
-        <div class="image">
-          <img src="./Img/ghost.png" alt="Projects">
-        </div>
-        <div class="content">
-          <a href="https://ghost-town.netlify.app/" target="_blank" class="header">Ghost Town</a>
-          <div class="description">
-            A single player game where the user has to survive the game by shooting the
-            ghosts that will appear in the screen at a random moment in time.
+        <div class="col-sm">
+          <div class="project-container">
+            <h4 class="title">Ironfolio</h4>
+            <div class="content">
+              <a href="https://iron-folio.netlify.app/" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./img/ironfolio.png">
+                <div class="content-details fadeIn-top">
+                  <h3>Ironfolio</h3>
+                  <p>React / Express.js / MongoDB / Material UI</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="extra content">
-          <a href="https://ghost-town.netlify.app/" target="_blank">
-            See more
-          </a>
-        </div>
       </div>
-      <div class="ui card">
-        <div class="image">
-          <img src="./Img/youtubeapp.png" alt="Projects">
-        </div>
-        <div class="content">
-          <a href="https://my-youtube-browser.netlify.app/" target="_blank" class="header">Youtube Browser</a>
-          <div class="description">
-            A replica from youtube but created using the latest technologies such as React, React Hooks and ES6.
+      <div class="row">
+        <div class="col-sm">
+          <div class="project-container">
+            <h4 class="title">Video Browser</h4>
+            <div class="content">
+              <a href="https://the-movie-finder.netlify.app/" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./img/myyoutube.png">
+                <div class="content-details fadeIn-top">
+                  <h3>Youtube Video Browser</h3>
+                  <p>React / API / CSS</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="extra content">
-          <a href="https://my-youtube-browser.netlify.app/" target="_blank">
-            See more
-          </a>
-        </div>
-      </div>
-      <div class="ui card">
-        <div class="image">
-          <img src="./Img/mia305.png" alt="Projects">
-        </div>
-        <div class="content">
-          <a href="https://miaplacestogo.netlify.app/" target="_blank" class="header">Mia Places</a>
-          <div class="description">
-            An app where the user to guide himself when use goes to Miami, it'll be an easy tool
-            to use and move around the Sunshine State ☀️.
+        <div class="col-sm">
+          <div class="project-container">
+            <h4 class="title">The New Normal</h4>
+            <div class="content">
+              <a href="https://the-new-normal-informative.netlify.app/" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./img/newsapp copy.png">
+                <div class="content-details fadeIn-top">
+                  <h3>The New Normal</h3>
+                  <p>React / API / Axios / React Router / Semantic UI</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="extra content">
-          <a href="https://miaplacestogo.netlify.app/" target="_blank">
-            See more
-          </a>
+        <div class="col-sm">
+          <div class="project-container">
+            <h4 class="title">Ghost Town Game</h4>
+            <div class="content">
+              <a href="https://ghost-town.netlify.app/" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./img/ghosttown copy.png">
+                <div class="content-details fadeIn-top">
+                  <h3>Ghost Town Game</h3>
+                  <p>JavaScript / Canvas</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="project-container">
+            <h4 class="title">Portfolio</h4>
+            <div class="content">
+              <a href="https://www.fabianpena.dev/" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./img/portfolio.png">
+                <div class="content-details fadeIn-top">
+                  <h3>Portfolio</h3>
+                  <p>HTML / CSS / SCSS / JavaScript / Bootstrap</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="project-container">
+            <h4 class="title">Miami Places</h4>
+            <div class="content">
+              <a href="https://miaplacestogo.netlify.app/" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./img/placesmiami.png">
+                <div class="content-details fadeIn-top">
+                  <h3>Miami Places</h3>
+                  <p>React / API / Axios</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="project-container">
+            <h4 class="title">GitHub Finder</h4>
+            <div class="content">
+              <a href="https://github.com/fabianpena90/github-finder/" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./img/github.png">
+                <div class="content-details fadeIn-top">
+                  <h3>GitHub Finder</h3>
+                  <p>React / Context / React Router / Bootstrap</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </article>
+  </section>
 
-  <article class="article">
-    <div class="ui container">
-    <h2 class="subtitles">Technologies I've worked with</h2>
-    <div class="ui stackable four column grid small images">
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/react-native.png" alt="logos"/>
-        <p class="icones">React</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/javascript.png" alt="logos"/>
-        <p class="icones">JavaScript</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/html-5.png" alt="logos"/>
-        <p class="icones">HTML</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/css3.png" alt="logos"/>
-        <p class="icones">CSS</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/nodejs.png" alt="logos"/>
-        <p class="icones">Node JS</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/mongodb.png" alt="logos"/>
-        <p class="icones">MongoDB</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/npm.png" alt="logos"/>
-        <p class="icones">NPM</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/ios-glyphs/150/000000/github.png" alt="logos"/>
-        <p class="icones">GitHub</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/bootstrap.png" alt="logos"/>
-        <p class="icones">Bootstrap</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/material-ui.png" alt="logos"/>
-        <p class="icones">Material UI</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/firebase.png" alt="logos"/>
-        <p class="icones">Firebase</p>
-      </div>
-      <div class="tech column">
-        <img src="https://img.icons8.com/color/150/000000/heroku.png" alt="logos"/>
-        <p class="icones">Heroku</p>
-      </div>
-    </div>
-    </div>
-  </article>
+  <hr class="style-five">
 
-  <article id="contact" class="contact-content">
-    <div class="ui container">
-      <h2 class="subtitles">Contact Me</h2>
-      <div class="ui form">
-        <form class="kwes-form" action="https://kwes.io/api/foreign/forms/51UMT7wM7adT8eJWPxOy">
-        <div class="two fields">
-          <div class="field">
-            <label for="firstName">First name</label>
-            <input type="text" name="firstName" placeholder="First Name" rules="required|max:255">
-          </div>
-          <div class="field">
-            <label for="lastName">Last name</label>
-            <input type="text" name="lastName" placeholder="Last Name" rules="required|max:255">
-          </div>
+  <!-- Contact Me -->
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center">Contact Me</h2>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter name">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email"
+            required>
         </div>
-        <div class="field">
-          <label>Message</label>
-          <textarea name="message" placeholder="Message" rules="required|max:255"></textarea>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
         </div>
-        <button type="submit" class="btn btn-large ui button">Submit</button>
-      </div>
-    </form>
+        <button type="button" class="btn btn-outline-info">Submit</button>
+      </form>
     </div>
-  </article>
+  </section>
 
-  <footer>&#169; Copyright Fabian Pena 2020 <a href="https://github.com/fabianpena90" target="_blank"><i class="github  icon"></i></a> <a href="mailto:camilo.fabis@gmail.com"><i class="paper plane  icon"></i></a> <a href="https://www.linkedin.com/in/fabianpena90/" target="_blank"><i class="linkedin icon"></i></a>
-  </footer>
+  <!-- Footer -->
 
-  <script src="https://kwes.io/v2/kwes-script.js" defer></script>
+  <nav class="navbar navbar-text fixed-bottom navbar-dark bg-dark">
+    <p class="footer">&#169; Copyright Fabian Pena 2020 <a class="footer-links" href="https://github.com/fabianpena90" target="_blank"> ||  <i class="fab fa-github"> </i></a> <a class="footer-links" href="mailto:camilo.fabis@gmail.com"> || <i class="fas fa-envelope"> </i> </a> <a class="footer-links" href="https://www.linkedin.com/in/fabianpena90/" target="_blank"> || <i class="fab fa-linkedin"> </i></a></p>
+  </nav>
+
+  <!-- JavaScripts -->
+  <script src="./js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
