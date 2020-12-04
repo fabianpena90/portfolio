@@ -217,6 +217,10 @@ $stars-big: stars(100);
 }
 
 // Projects
+#projects h2 {
+  padding: 40px 0;
+  text-decoration: underline;
+}
 
 .project-container{
   padding: 20px 0;
@@ -311,7 +315,17 @@ $stars-big: stars(100);
   left: 80%;
 }
 
+// Contact Me
+#about h2 {
+  padding: 40px 0;
+  text-decoration: underline;
+}
+
 // Footer
+#contact h2 {
+  padding: 40px 0;
+  text-decoration: underline;
+}
 
 .footer {
   color: white;
