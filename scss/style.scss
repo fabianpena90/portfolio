@@ -15,7 +15,6 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-
 }
 .diagonal-hero-bg {
   position: absolute;
@@ -23,9 +22,17 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #2b5876;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   z-index: -1;
 }
 
@@ -42,7 +49,6 @@ body {
 $stars-small: stars(700);
 $stars-medium: stars(200);
 $stars-big: stars(100);
-
 
 .stars {
   z-index: -1;
@@ -62,7 +68,7 @@ $stars-big: stars(100);
   animation: starsAnimation 50s linear infinite;
 
   &:after {
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 2000px;
     width: 1px;
@@ -80,7 +86,7 @@ $stars-big: stars(100);
   animation: starsAnimation 100s linear infinite;
 
   &:after {
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 2000px;
     width: 2px;
@@ -99,7 +105,7 @@ $stars-big: stars(100);
   animation: starsAnimation 150s linear infinite;
 
   &:after {
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 2000px;
     width: 3px;
@@ -125,7 +131,7 @@ $stars-big: stars(100);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .text {
@@ -162,6 +168,9 @@ $stars-big: stars(100);
 // About
 #about {
   width: 100vw;
+  height: 70vh;
+  display: flex;
+  padding: 80px;
 }
 
 #about h2 {
@@ -185,7 +194,7 @@ $stars-big: stars(100);
 }
 
 .intro a:hover {
-  color: #000
+  color: #000;
 }
 
 .about-icons {
@@ -197,6 +206,7 @@ $stars-big: stars(100);
   justify-content: center;
   align-items: center;
   color: #04c2c9;
+  filter: drop-shadow(0 0 0.75rem #2b5876);
 }
 
 .about-icons-description {
@@ -212,7 +222,12 @@ $stars-big: stars(100);
 .style-five {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
   margin: 60px 0;
 }
 
@@ -222,11 +237,11 @@ $stars-big: stars(100);
   text-decoration: underline;
 }
 
-.project-container{
+.project-container {
   padding: 20px 0;
 }
 
-.project-container .title{
+.project-container .title {
   color: #1a1a1a;
   text-align: center;
   margin-bottom: 10px;
@@ -241,7 +256,7 @@ $stars-big: stars(100);
 }
 
 .content .content-overlay {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   height: 99%;
   width: 100%;
@@ -255,11 +270,11 @@ $stars-big: stars(100);
   transition: all 0.4s ease-in-out 0s;
 }
 
-.content:hover .content-overlay{
+.content:hover .content-overlay {
   opacity: 1;
 }
 
-.content-image{
+.content-image {
   width: 100%;
 }
 
@@ -280,13 +295,13 @@ $stars-big: stars(100);
   transition: all 0.3s ease-in-out 0s;
 }
 
-.content:hover .content-details{
+.content:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
 }
 
-.content-details h3{
+.content-details h3 {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.15em;
@@ -294,20 +309,20 @@ $stars-big: stars(100);
   text-transform: uppercase;
 }
 
-.content-details p{
+.content-details p {
   color: #fff;
   font-size: 0.8em;
 }
 
-.fadeIn-bottom{
+.fadeIn-bottom {
   top: 80%;
 }
 
-.fadeIn-top{
+.fadeIn-top {
   top: 20%;
 }
 
-.fadeIn-left{
+.fadeIn-left {
   left: 20%;
 }
 
@@ -331,11 +346,11 @@ $stars-big: stars(100);
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .footer-links {
-  color: white
+  color: white;
 }
 
 .footer-links:hover {
